@@ -1,4 +1,4 @@
-import {DISPLAYMODES} from './../constants'
+import {DISPLAYMODES} from '../constants'
 
 export default {
   name: 'manifest',
