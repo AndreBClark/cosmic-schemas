@@ -1,18 +1,18 @@
 {
   "name": "sanity-meta-schema",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sanity schematypes for managing head/meta tags on your website",
   "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "sanity",
     "schema",
     "typescript",
-    "meta"
+    "meta",
+    "head",
+    "helmet",
+    "seo"
   ],
-  "author": "<AndreBClark>",
+  "author": "Andre Clark <andre@cosmicdivision.dev> (cosmicdiviion.dev)",
   "license": "ISC",
   "devDependencies": {
     "@sanity/types": "^2.31.1",
