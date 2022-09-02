@@ -1,0 +1,24 @@
+{
+  "name": "sanity-meta-schema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sanity",
+    "schema",
+    "typescript",
+    "meta"
+  ],
+  "author": "<AndreBClark>",
+  "license": "ISC",
+  "devDependencies": {
+    "@sanity/types": "^2.31.1",
+    "@types/node": "^18.7.14",
+    "sanity": "3.0.0-dev-preview.15",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9"
+  }
+}
