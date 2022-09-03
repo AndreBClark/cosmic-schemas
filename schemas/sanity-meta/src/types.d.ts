@@ -9,19 +9,18 @@ declare global {
     manifest?: Webmanifest;
   }
   export interface ObjectSchema {
-    name: string
-    title: string
-    type?: string
-    options?: {}
+    name: string;
+    title: string;
+    type?: string;
+    options?: {};
   }
   export interface Field extends ObjectSchema {
-    fieldset?: string
+    fieldset?: string;
   }
-
   export interface Webmanifest extends ObjectSchema {
-    type: string
-    fieldsets?: ObjectSchema[]
-    fields: Field[]
+    type: string;
+    fieldsets?: ObjectSchema[];
+    fields: Field[];
   }
   export interface OpenGraph {
     basic: {
@@ -45,11 +44,7 @@ declare global {
     title: string;
     value: string;
   }
-  type DisplayMode = "browser"| 'fullscreen' | 'minimal-ui'| 'standalone'
-
-
-  // plural types
+  type DisplayMode = "browser" | "fullscreen" | "minimal-ui" | "standalone";
   export interface Locales extends Array<Locale> {}
   export interface DisplayModes extends Array<DisplayMode> {}
 }
-export {}
