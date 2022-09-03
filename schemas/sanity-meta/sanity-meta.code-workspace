@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"schemas": "./schemas",
+			"queries": "./query"
+		}
+	],
+	"settings": {}
+}

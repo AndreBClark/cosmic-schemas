@@ -1,18 +1,23 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@sanity/types': ^2.31.1
-  '@types/node': ^18.7.14
-  sanity: 3.0.0-dev-preview.15
-  typescript: ^4.8.2
-  vite: ^3.0.9
+importers:
 
-devDependencies:
-  '@sanity/types': 2.31.1
-  '@types/node': 18.7.14
-  sanity: 3.0.0-dev-preview.15
-  typescript: 4.8.2
-  vite: 3.0.9
+  .:
+    specifiers: {}
+
+  schemas/sanity-meta:
+    specifiers:
+      '@sanity/types': ^2.31.1
+      '@types/node': ^18.7.14
+      sanity: 3.0.0-dev-preview.15
+      typescript: ^4.8.2
+      vite: ^3.0.9
+    devDependencies:
+      '@sanity/types': 2.31.1
+      '@types/node': 18.7.14
+      sanity: 3.0.0-dev-preview.15
+      typescript: 4.8.2
+      vite: 3.0.9
 
 packages:
 
