@@ -196,17 +196,14 @@ export default SiteTitle = () => {
 
 ```
 
-
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Page specific meta/opengraph schema
+* [ ] individual page and article meta/opengraph schema
 <!-- - [ ] Feature 2
 - [ ] Feature 3
     - [ ] Nested Feature -->
@@ -247,24 +244,20 @@ Distributed under the ISC License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - andre@cosmicdivision.dev
+Andre Clark - andre@cosmicdivision.dev
 
 Project Link: [https://github.com/AndreBClark/cosmic-schemas](https://github.com/AndreBClark/cosmic-schemas)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
+## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Astro SEO](https://github.com/jonasmerlin/astro-seo#open-graph) documented a helpful typescript interface for opengraph data
+<!-- * []()
+* []() -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
