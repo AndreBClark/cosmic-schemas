@@ -6,5 +6,6 @@
   "include": [
     "src/**/*.ts",
     "**/*.d.ts"
-  ]
+  ],
+  "exclude": ["dist"]
 }
