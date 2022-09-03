@@ -80,14 +80,14 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-<!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `AndreBClark`, `cosmic-schemas`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `Sanity Schema Types for managing HTML meta tags on  your website` -->
-schemas for websites using a sanity studio
+Sanity Schema Types for managing HTML meta tags within your Sanity Studio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
+
 * [Sanity](https://www.sanity.io/docs/overview-introduction) Headless Content Management Platform (CMS);
 * [TypeScript](https://www.typescriptlang.org/) JavaScript with syntax for types.
 <!-- * [![Next][Next.js]][Next-url]
@@ -105,6 +105,7 @@ schemas for websites using a sanity studio
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
 start a Sanity Project and set up your initial schema and frontend. follow guides on [Sanity Docs](https://www.sanity.io/docs/overview-introduction). You can use any frontend framework you want. I use [AstroJS](https://docs.astro.build/en/getting-started/)
 
 ### Prerequisites
@@ -257,10 +258,11 @@ Project Link: [https://github.com/AndreBClark/cosmic-schemas](https://github.com
 ## Acknowledgments
 
 * [Astro SEO](https://github.com/jonasmerlin/astro-seo#open-graph) documented a helpful typescript interface for opengraph data
+* [Readme Template](https://github.com/othneildrew/Best-README-Template)
 <!-- * []()
 * []() -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
