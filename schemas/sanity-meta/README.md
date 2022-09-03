@@ -151,7 +151,7 @@ Add the document type import it into your schematypes array
 // ./studio/schemas/index.ts
 import Documents from "./documents";
 import Objects from "./objects";
-import metaSchemaTypes from "sanity-meta;
+import metaSchemaTypes from "sanity-meta";
 
 export const schemaTypes = [
   ...Object.values(Documents),
