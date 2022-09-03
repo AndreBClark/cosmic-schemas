@@ -23,11 +23,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
-<br />
+<!-- <br />
 <div align="center">
   <a href="https://github.com/AndreBClark/cosmic-schemas">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
+-->
 
 <h3 align="center">Meta Sanity Schema Types</h3>
   <p align="center">
@@ -87,7 +88,8 @@ schemas for websites using a sanity studio
 
 
 ### Built With
-* Sanity.io
+* [Sanity](https://www.sanity.io/docs/overview-introduction) Headless Content Management Platform (CMS);
+* [TypeScript](https://www.typescriptlang.org/) JavaScript with syntax for types.
 <!-- * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -103,6 +105,7 @@ schemas for websites using a sanity studio
 
 <!-- GETTING STARTED -->
 ## Getting Started
+start a Sanity Project and set up your initial schema and frontend. follow guides on [Sanity Docs](https://www.sanity.io/docs/overview-introduction). You can use any frontend framework you want. I use [AstroJS](https://docs.astro.build/en/getting-started/)
 
 ### Prerequisites
 
