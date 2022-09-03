@@ -15,9 +15,9 @@ const querySiteMeta = `
     title,
     url,
     "image": image.asset->url
-  },
+    },
     "optional": {
-      "lang": locale.locale,
+      locale,
       site_name,
       description
     }
