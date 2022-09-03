@@ -1,8 +1,7 @@
 {
   "name": "sanity-meta",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sanity schematypes for managing head/meta tags on your website",
-  "main": "index.ts",
   "keywords": [
     "sanity",
     "schema",
@@ -12,6 +11,13 @@
     "helmet",
     "seo"
   ],
+  "main": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --build"
+  },
   "author": "Andre Clark <andre@cosmicdivision.dev> (cosmicdivision.dev)",
   "license": "ISC",
   "devDependencies": {
