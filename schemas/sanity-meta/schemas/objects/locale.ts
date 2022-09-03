@@ -1,4 +1,4 @@
-import { LOCALES } from "../constants";
+import { LOCALES } from "../../utils/constants";
 
 export default {
   type: "string",

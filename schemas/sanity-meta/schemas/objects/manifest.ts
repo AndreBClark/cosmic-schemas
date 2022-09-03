@@ -1,4 +1,4 @@
-import {DISPLAYMODES} from '../constants'
+import {DISPLAYMODES} from '../../utils/constants'
 
 export default {
   name: 'manifest',
@@ -39,20 +39,4 @@ export default {
     display: DISPLAYMODES[0],
     start_url: '/',
   },
-}
-
-interface ObjectSchema {
-  name: string
-  title: string
-  type?: string
-  options?: {}
-}
-interface Field extends ObjectSchema {
-  fieldset?: string
-}
-
-interface Manifest extends ObjectSchema {
-  type: string
-  fieldsets?: ObjectSchema[]
-  fields: Field[]
 }
