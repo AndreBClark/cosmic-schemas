@@ -1,9 +1,10 @@
 {
 	"folders": [
 		{
-			"path": ".",
-			"schemas": "./schemas",
-			"queries": "./query"
+			"path": "./src",
+			"schemas": "./src/schemas",
+			"queries": "./src/queries",
+			"utils": "./src/utils"
 		}
 	],
 	"settings": {}
