@@ -1,11 +1,15 @@
 import locale from "./locale";
-import openGraph from "./openGraph";
+import openGraph from "./opengraph/index";
 import manifest from "./manifest";
+import ogBasic from "./opengraph/basic";
+import ogOptional from "./opengraph/optional";
 
-const Documents = {
+const Objects = {
   openGraph,
   locale,
-  manifest
+  manifest,
+  ogBasic,
+  ogOptional
 };
 export { openGraph, locale, manifest}
-export default Documents;
+export default Objects;
