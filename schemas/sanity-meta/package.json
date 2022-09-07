@@ -1,6 +1,6 @@
 {
   "name": "sanity-meta",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Sanity schematypes for managing head/meta tags on your website",
   "type": "module",
   "keywords": [
@@ -12,9 +12,9 @@
     "helmet",
     "seo"
   ],
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "files": [
-    "dist"
+    "./dist"
   ],
   "scripts": {
     "build": "tsc --build"

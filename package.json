@@ -14,8 +14,8 @@
   "author": "Andre Clark <andre@cosmicdivision.dev> (cosmicdivision.dev)",
   "license": "ISC",
   "devDependencies": {
-    "commitlint": "^17.1.2",
-    "@types/node": "^18.7.14"
+    "@types/node": "^18.7.16",
+    "commitlint": "^17.1.2"
   },
   "pnpm": {
     "allowedDeprecatedVersions": {

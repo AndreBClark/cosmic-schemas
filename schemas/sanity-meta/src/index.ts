@@ -1,7 +1,7 @@
-import metaSchemaTypes from "schemas";
-import Documents from "schemas/documents";
-import Objects from "schemas/objects";
-import Queries from "queries";
+import metaSchemaTypes from "./schemas/index";
+import Documents from "./schemas/documents/index";
+import Objects from "./schemas/objects/index";
+import Queries from "./queries/index";
 
 export const { siteMeta } = Documents;
 export const { openGraph, manifest, locale } = Objects;

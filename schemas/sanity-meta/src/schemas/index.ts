@@ -1,5 +1,5 @@
-import Documents from "./documents";
-import Objects from "./objects";
+import Documents from "./documents/index";
+import Objects from "./objects/index";
 const metaSchemaTypes = [
   ...Object.values(Documents),
   ...Object.values(Objects)

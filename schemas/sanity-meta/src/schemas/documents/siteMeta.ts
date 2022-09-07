@@ -1,11 +1,16 @@
-import { openGraph } from "../objects";
+import { openGraph } from "../objects/index";
 
 export default {
   type: "document",
   name: "siteMeta",
   title: "Site Configuration",
   fieldsets: [
-    { name: "google", title: "Google Analytics" },
+    {
+      name: "google",
+      title: "Google Analytics",
+      hidden: ({ document }: {  document: {
+      [key: string]: never;
+    }}): boolean => !(document.isGoogleAnalyticsEnabled) },
   ],
   groups: [
     {
@@ -33,7 +38,12 @@ export default {
     },
   ],
   fields: [
-    ...openGraph.fields,
+    {
+      type: "string",
+      title: "Title",
+      name: "title",
+      group: ["meta"]
+    },
     {
       type: "text",
       name: "description",
@@ -62,6 +72,7 @@ export default {
         layout: "checkbox"
       }
     },
+    ...openGraph.fields,
     {
       type: "string",
       name: "googleanalyticsId",

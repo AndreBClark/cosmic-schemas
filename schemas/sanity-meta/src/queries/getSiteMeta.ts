@@ -2,7 +2,7 @@ const querySiteMeta = `
 *[_type=="siteMeta"][0] {
   title,
   description,
-  "canonical": url,
+  "canonical": openGraph.basic.url,
   isGoogleAnalyticsEnabled,
   isPwa,
   manifest {
@@ -10,11 +10,11 @@ const querySiteMeta = `
     "background_color": background_color.hex,
     "theme_color": theme_color.hex
   },
-  "openGraph": {
+  openGraph {
     "basic": {
-    title,
-    url,
-    "image": image.asset->url
+      title,
+      url,
+      "image": image.asset->url
     },
     "optional": {
       locale,
@@ -27,8 +27,8 @@ const querySiteMeta = `
 
 
 export default async function getSiteMeta(
-  query: string = querySiteMeta,
   client: SanityClientLike,
+  query: string = querySiteMeta,
   mutation = "fetch"
 ):Promise<Site> {
   const site: Site = await client[mutation](query)
