@@ -35,6 +35,6 @@ export default async function getSiteMeta(
   query: Query.Query = querySiteMeta,
   mutation: string = "fetch"
 ):Promise<Query.Site> {
-  const site: Site = await client[Symbol(mutation)](query)
+  const site: Site = await client[mutation](query)
   return site
 }

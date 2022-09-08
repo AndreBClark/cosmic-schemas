@@ -3,7 +3,7 @@ import type { SanityClient } from "@sanity/client";
 declare global {
     export namespace Query {
         interface Client<T> {
-            [key: symbol]: (arg0: Query) => Promise<T>;
+            [key: string]: (arg0: Query) => Promise<T>;
         }
         type SanityClientLike<T> = (SanityClient | PicoSanity) & Client<T>;
         interface Meta {
