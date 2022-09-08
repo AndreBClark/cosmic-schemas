@@ -1,6 +1,8 @@
 import locale from '../locale';
 export default {
   name: "optional",
+  type: "object",
+  title: "Optional Social Share Info",
   fields: [
     {
       type: 'string',
@@ -10,7 +12,7 @@ export default {
     },
     {
       type: "text",
-      name: "description",
+      name: "ogDescription",
       title: "Social Share Description",
       group: ['og', 'meta']
     },

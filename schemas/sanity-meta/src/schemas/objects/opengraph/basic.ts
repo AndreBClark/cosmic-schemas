@@ -1,11 +1,13 @@
 import type { Rule } from '@sanity/types';
 export default {
   name: "basic",
+  type:"object",
+  title: "Basic Social Share Info",
   fields: [
     {
       type: 'string',
       title: 'Page Title',
-      name: 'title',
+      name: 'ogTitle',
       description:
         'Set the title Open Graph should use. In most situations, this should be different from the value of the title prop',
       validation: (Rule: Rule) => Rule.required(),

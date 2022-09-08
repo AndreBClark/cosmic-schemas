@@ -2,7 +2,7 @@ const querySiteMeta = `
 *[_type=="siteMeta"][0] {
   title,
   description,
-  "canonical": openGraph.basic.url,
+  "canonical": url,
   isGoogleAnalyticsEnabled,
   isPwa,
   manifest {
@@ -10,20 +10,22 @@ const querySiteMeta = `
     "background_color": background_color.hex,
     "theme_color": theme_color.hex
   },
-  openGraph {
-    basic {
-      title,
+  "openGraph": {
+    "basic": {
+      "title": ogTitle,
       url,
       "image": image.asset->url
     },
-    optional {
+    "optional": {
       locale,
       site_name,
-      description
-    }
-    image {
-      "url": openGraph.basic.image.asset->url,
-      "alt": openGraph.basic.image.asset->alt
+      ogDescription
+    },
+    "image": image.asset-> {
+      url,
+      "height": metadata.dimensions.height,
+      "width": metadata.dimensions.width,
+      "type": mimeType,
     }
   }
 }

@@ -1,15 +1,12 @@
+import basic from "./basic";
+import optional from "./optional";
+
 export default {
   name: "openGraph",
-  title: "Social Share Config",
   type: "object",
+  title: "Social Share Details",
   fields: [
-    {
-      type: "basic",
-      name: "basic"
-    },
-    {
-      type: "optional",
-      name: "optional"
-    },
+    ...basic.fields,
+    ...optional.fields
   ]
 }

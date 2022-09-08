@@ -7,10 +7,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "moduleDetection": "force",
+    "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "declaration": true,
+    "allowSyntheticDefaultImports": true,
+
   },
   "include": ["*.ts", "**/*.ts"],
   "exclude": [
