@@ -11,15 +11,19 @@ const querySiteMeta = `
     "theme_color": theme_color.hex
   },
   openGraph {
-    "basic": {
+    basic {
       title,
       url,
       "image": image.asset->url
     },
-    "optional": {
+    optional {
       locale,
       site_name,
       description
+    }
+    image {
+      "url": openGraph.basic.image.asset->url,
+      "alt": openGraph.basic.image.asset->alt
     }
   }
 }
