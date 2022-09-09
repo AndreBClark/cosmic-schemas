@@ -2,51 +2,59 @@ import type { PicoSanity } from "picosanity";
 import type { SanityClient } from "@sanity/client";
 declare global {
     export namespace Query {
+        type Mutation = "fetch" | "config" | string;
         interface Client<T> {
-            [key: symbol]: (arg0: Query) => Promise<T>;
+            [key: string]: (arg0: Request) => Promise<T>;
         }
         type SanityClientLike<T> = (SanityClient | PicoSanity) & Client<T>;
         interface Meta {
             title: string;
             description?: string;
+            canonical: URL;
             lang?: string;
         }
         interface Site extends Meta {
-            openGraph?: OpenGraph;
+            openGraph?: OpenGraph.API;
             manifest?: Webmanifest;
         }
-        interface Query extends String {
-        }
-        interface OpenGraph {
-            basic: {
-                title: string;
-                type: string;
-                image: string;
-                url: URL["href"];
-            };
-            optional?: {
-                audio?: URL["href"];
-                description?: string;
-                determiner?: string;
-                locale?: string;
-                localeAlternate?: Array<string>;
-                siteName?: string;
-                video?: URL["href"];
-            };
-        }
-        interface ObjectSchema {
-            name: string;
-            title: string;
-            type?: string;
-            options?: {};
-        }
-        interface Field extends ObjectSchema {
+        type Request = String;
+        interface Field extends Schema.Object {
             fieldset?: string;
         }
-        interface Webmanifest extends ObjectSchema {
+        interface Webmanifest extends Schema.Object {
             type: string;
-            fieldsets?: ObjectSchema[];
+            fieldsets?: Schema.Object[];
             fields: Field[];
+        }
+    }
+    namespace OpenGraph {
+        interface Basic {
+            title: string;
+            type: string;
+            image: URL["href"];
+            url: URL["href"];
+        }
+        interface Optional {
+            audio?: URL["href"];
+            description?: string;
+            determiner?: string;
+            locale?: Locale["value"];
+            localeAlternate?: Locales["values"];
+            siteName?: string;
+            video?: URL["href"];
+        }
+        interface Image {
+            url: URL["href"];
+            alt: string;
+            height?: number;
+            width?: number;
+        }
+        interface API {
+            basic: Basic;
+            optional?: Optional;
+            image?: Image;
+        }
+        interface Flat extends Basic, Optional, Image {
         }
     }
     export namespace Schema {
@@ -71,31 +79,14 @@ declare global {
         lang?: string;
     }
     export interface Site extends Meta {
-        openGraph?: OpenGraph;
+        openGraph?: OpenGraph.API;
         manifest?: Schema.Webmanifest;
-    }
-    export interface OpenGraph {
-        basic: {
-            title: string;
-            type: string;
-            image: URL["href"];
-            url: URL["href"];
-        };
-        optional?: {
-            site_name?: string;
-            description?: string;
-            audio?: string;
-            determiner?: string;
-            locale?: string;
-            localeAlternate?: Array<string>;
-            siteName?: string;
-            video?: string;
-        };
     }
     interface Locale {
         title: string;
-        value: string;
+        value: string | AngloFrench;
     }
+    type AngloFrench = "en-us" | "en-gb" | "fr";
     type DisplayMode = "browser" | "fullscreen" | "minimal-ui" | "standalone";
     export interface Locales extends Array<Locale> {
     }
