@@ -1,6 +1,6 @@
 {
   "name": "sanity-meta",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Sanity schematypes for managing head/meta tags on your website",
   "type": "module",
   "keywords": [
