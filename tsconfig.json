@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2016",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -11,12 +11,16 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "declaration": true,
     "allowSyntheticDefaultImports": true,
-
+    "types": ["node"]
+  },
+  "typeAcquisition": {
+    "enable": true,
   },
   "include": ["*.ts", "**/*.ts"],
   "exclude": [
-    "node_modules"
+    "dist",
+    "node_modules",
+    "/**/node_modules"
   ]
 }
