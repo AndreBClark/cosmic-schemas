@@ -1,4 +1,4 @@
-import locale from '../locale';
+import locale from 'schemas/objects/locale';
 export default {
   name: "optional",
   type: "object",

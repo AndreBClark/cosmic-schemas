@@ -1,4 +1,4 @@
-import { openGraph } from "../objects/index";
+import { openGraph } from "schemas/objects/index";
 
 export default {
   type: "document",

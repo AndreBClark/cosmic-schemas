@@ -26,8 +26,23 @@ export default {
       name: 'image',
       description:
         'URL of the image that should be used in social media previews. If you define this, you must define two other OG basic properties as well: title and type.',
-      validation: (Rule: Rule) => Rule.required(),
+      validation: (Rule: Rule): Rule => Rule.required(),
       group: ['og'],
     },
+    {
+      type: "string",
+      name: "ogType",
+      title: "og:type",
+      options: {
+        list: [
+          "website",
+          "article",
+          "video",
+          "image"
+        ],
+      },
+      initialValue: "website",
+      group: ["og"]
+    }
   ]
 }
