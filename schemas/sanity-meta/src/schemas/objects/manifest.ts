@@ -1,6 +1,6 @@
 import {DISPLAYMODES} from '../../utils/constants'
 
-export default {
+export default<Schema.Object> {
   name: 'manifest',
   type: 'object',
   title: 'Progressive Web App Configuration',

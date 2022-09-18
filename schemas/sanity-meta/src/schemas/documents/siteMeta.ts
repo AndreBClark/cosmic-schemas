@@ -1,6 +1,6 @@
-import { openGraph } from "../objects/index";
+import { meta, openGraph, siteSettings, googleAnalytics } from "../objects/index";
 
-export default {
+export default<Schema.Document> {
   type: "document",
   name: "siteMeta",
   title: "Site Configuration",
@@ -8,15 +8,14 @@ export default {
     {
       name: "google",
       title: "Google Analytics",
-      hidden: ({ document }: {  document: {
-      [key: string]: never;
-    }}): boolean => !(document.isGoogleAnalyticsEnabled) },
+      hidden: ({ document }) => !document.isGoogleAnalyticsEnabled,
+    },
   ],
   groups: [
     {
       name: "meta",
       title: "Site Info",
-      default: true
+      default: true,
     },
     {
       name: "og",
@@ -25,77 +24,24 @@ export default {
     {
       name: "manifest",
       title: "Web App Settings",
-      hidden: ({ document }: {  document: {
-        [key: string]: never;
-      }}): boolean => !(document.isPwa)
+      hidden: ({ document })=> !document.isPwa,
     },
     {
       name: "google",
       title: "Google Config",
-      hidden: ({ document }: {  document: {
-        [key: string]: never;
-      }}): boolean => !(document.isGoogleAnalyticsEnabled)
+      hidden: ({ document }) => !document.isGoogleAnalyticsEnabled,
     },
   ],
   fields: [
-    {
-      type: "string",
-      title: "Title",
-      name: "title",
-      group: ["meta"]
-    },
-    {
-      type: "text",
-      name: "description",
-      title: "Describe This Site",
-      group: ["meta", "og"]
-    },
-    {
-      type: "boolean",
-      name: "isPwa",
-      title: "should this site be installable like an app?",
-      group: [
-        "meta", "manifest"
-      ],
-      initialValue: false,
-      options: {
-        layout: "checkbox"
-      }
-    },
-    {
-      type: "boolean",
-      name: "isGoogleAnalyticsEnabled",
-      title: "Enable Google Analytics?",
-      group: ["meta", "google"],
-      initialValue: false,
-      options: {
-        layout: "checkbox"
-      }
-    },
+    ...meta.fields,
+    ...siteSettings.fields,
     ...openGraph.fields,
-    {
-      type: "string",
-      name: "googleanalyticsId",
-      title: "Google Analytics ID",
-      fieldset: "google",
-      group: ["meta", "google"],
-    },
-    {
-      type: "string",
-      name: "googleSiteVerificationId",
-      title: "Google site Verification ID",
-      fieldset: "google",
-      group: ["meta", "google"],
-    },
+    ...googleAnalytics.fields,
     {
       type: "manifest",
       title: "Web App Features",
       name: "manifest",
-      group: "manifest"
-    }
+      group: "manifest",
+    },
   ],
-  initialValue: {
-    isPwa: false,
-    isGoogleAnalyticsEnabled: false,
-  }
 };

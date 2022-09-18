@@ -1,6 +1,6 @@
 import { LOCALES } from "../../utils/constants";
 
-export default {
+export default<Schema.Field> {
   type: "string",
   name: "locale",
   title: "Language",

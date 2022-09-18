@@ -18,7 +18,14 @@ const DISPLAYMODES: DisplayModes =  [
   'minimal-ui',
   'standalone',
 ]
+const OGTYPES = [
+  "website",
+  "article",
+  "blog",
+  "video",
+  "image",
+]
 
-const CONSTANTS = { LOCALES, DISPLAYMODES };
-export { LOCALES, DISPLAYMODES }
+const CONSTANTS = { LOCALES, DISPLAYMODES, OGTYPES };
+export { LOCALES, DISPLAYMODES, CONSTANTS, OGTYPES };
 export default CONSTANTS;
