@@ -39,7 +39,7 @@ declare global {
       openGraph?: OpenGraph.API
       manifest?: Webmanifest
     }
-    type Request = String
+    export interface Request extends String {}
   }
   namespace OpenGraph {
     interface Basic {
@@ -76,26 +76,11 @@ declare global {
       title: string
       description?: string
     }
-
     interface WithConditionals {
       hidden?(context: Context): boolean
       readonly?(context: Context): boolean
     }
-
-    interface Object extends Field {
-      type: string
-      fields: Field[]
-      groups?: Fieldset[]
-      fieldsets?: Fieldset[]
-      initialValues?: unknown
-    }
-    export interface Document extends Object {}
-    interface Fieldset extends Base, WithConditionals {
-      default?: boolean
-    }
-
     export interface Field extends Base, WithConditionals {
-      [index: string]: any
       type: string
       options?: {}
       fieldset?: Fieldset["name"]|Fieldset["name"][]
@@ -103,6 +88,21 @@ declare global {
       validation?(Rule: Rule, context?: Context): boolean
       initialValue?: unknown
     }
+
+
+    export interface Object extends Base, WithConditionals {
+      type: string;
+      fields: Field[]
+      groups?: Fieldset[]
+      fieldsets?: Fieldset[]
+      initialValues?: unknown
+      // [key: string]: any
+    }
+    export interface Document extends Object {}
+    interface Fieldset extends Base, WithConditionals {
+      default?: boolean
+    }
+
     export interface FieldSelector {
       sourceObject: Schema.Object
       searchElements?: string[] | string
