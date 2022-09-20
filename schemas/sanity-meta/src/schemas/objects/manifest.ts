@@ -1,6 +1,6 @@
-import {DISPLAYMODES} from '../../utils/constants'
+import { DISPLAYMODES } from '../../utils/constants'
 
-export default<Schema.Object> {
+const WebManifest: Schema.Object = {
   name: 'manifest',
   type: 'object',
   title: 'Progressive Web App Configuration',
@@ -35,8 +35,9 @@ export default<Schema.Object> {
       },
     },
   ],
-  initialValue: {
+  initialValues: {
     display: DISPLAYMODES[0],
     start_url: '/',
   },
 }
+export default WebManifest;

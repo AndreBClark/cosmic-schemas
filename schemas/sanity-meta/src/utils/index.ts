@@ -1,13 +1,10 @@
 import CONSTANTS from "./constants";
-import getFields from "./getFields";
-import injectGroups from "./injectGroups";
+const { LOCALES, DISPLAYMODES, OGTYPES } = CONSTANTS
 
-const Utils = {
-  CONSTANTS,
-  getFields,
-  injectGroups
+export default {
+  LOCALES,
+  DISPLAYMODES,
+  OGTYPES
 };
 
-export default Utils;
-
-export { CONSTANTS, getFields, injectGroups };
+export { LOCALES, DISPLAYMODES, OGTYPES };

@@ -1,8 +1,8 @@
-import { LOCALES } from "../../utils/constants";
+import { LOCALES } from "../../utils/index";
 
-export default<Schema.Field> {
-  type: "string",
+const Locales: Schema.Field = {
   name: "locale",
+  type: "string",
   title: "Language",
   description:
     "used for informing the browser the site's language. Should be a valid bcp47 language code like en, 'en-US', 'no' or 'nb-NO'",
@@ -12,3 +12,4 @@ export default<Schema.Field> {
   initialValue: LOCALES[0].value,
   group: ['meta', 'og'],
 }
+export default Locales;

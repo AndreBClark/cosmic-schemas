@@ -1,20 +1,22 @@
-export default {
-  name: "googleaAalytics",
+const GoogleAnalytics: Schema.Object = {
+  name: "google",
   title: "Google Analytics Configuration",
+  type: "object",
   fields: [
     {
       type: "string",
-      name: "googleanalyticsId",
+      name: "analyticsId",
       title: "Google Analytics ID",
       fieldset: "google",
       group: ["meta", "google"],
     },
     {
       type: "string",
-      name: "googleSiteVerificationId",
+      name: "SiteVerificationId",
       title: "Google site Verification ID",
       fieldset: "google",
       group: ["meta", "google"],
     },
   ]
 }
+export default GoogleAnalytics;

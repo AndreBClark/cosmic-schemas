@@ -1,4 +1,4 @@
-export default<Schema.Object> {
+const SiteSettings: Schema.Object = {
   name: "siteSettings",
   title: "Site Settings",
   type: "object",
@@ -25,3 +25,5 @@ export default<Schema.Object> {
     },
   ]
 }
+
+export default SiteSettings;

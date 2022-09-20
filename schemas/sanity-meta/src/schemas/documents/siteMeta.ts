@@ -1,6 +1,7 @@
 import { meta, openGraph, siteSettings, googleAnalytics } from "../objects/index";
 
-export default<Schema.Document> {
+
+const SiteMeta: Schema.Document = {
   type: "document",
   name: "siteMeta",
   title: "Site Configuration",
@@ -45,3 +46,5 @@ export default<Schema.Document> {
     },
   ],
 };
+
+export default SiteMeta;

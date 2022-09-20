@@ -1,4 +1,4 @@
-import { OGTYPES } from "utils/constants";
+import { OGTYPES } from "../../../utils/index";
 
 export default<Schema.Object> {
   name: "basic",

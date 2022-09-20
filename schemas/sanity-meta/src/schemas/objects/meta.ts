@@ -1,4 +1,4 @@
-export default<Schema.Object> {
+const Meta:Schema.Object = {
   type: "object",
   name: "meta",
   title: "Meta",
@@ -19,3 +19,4 @@ export default<Schema.Object> {
     },
   ]
 }
+export default Meta;
