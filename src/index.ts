@@ -1,4 +1,6 @@
-import {definePlugin} from 'sanity'
+import { definePlugin } from 'sanity';
+
+import metaSchemaTypes from './schemas';
 
 interface MyPluginConfig {
   /* nothing here yet */
@@ -22,5 +24,8 @@ export const myPlugin = definePlugin<MyPluginConfig | void>((config = {}) => {
   console.log('hello from sanity-plugin-sitemeta')
   return {
     name: 'sanity-plugin-sitemeta',
+    schema: {
+      types: metaSchemaTypes
+    }
   }
 })

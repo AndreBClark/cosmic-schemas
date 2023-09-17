@@ -1,4 +1,4 @@
-import { OGTYPES } from "../../../utils/index";
+import { OGTYPES } from '../../../../schemas/sanity-meta/src/utils/index';
 
 export default<Schema.Object> {
   name: "basic",

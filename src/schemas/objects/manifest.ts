@@ -1,4 +1,4 @@
-import { DISPLAYMODES } from '../../utils/constants'
+import { DISPLAYMODES } from '../../../schemas/sanity-meta/src/utils/constants';
 
 const WebManifest: Schema.Object = {
   name: 'manifest',

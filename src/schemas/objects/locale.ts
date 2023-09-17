@@ -1,4 +1,4 @@
-import { LOCALES } from "../../utils/index";
+import { LOCALES } from '../../../schemas/sanity-meta/src/utils/index';
 
 const Locales: Schema.Field = {
   name: "locale",

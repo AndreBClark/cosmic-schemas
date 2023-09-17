@@ -1,7 +1,13 @@
-import { meta, openGraph, siteSettings, googleAnalytics } from "../objects/index";
+import { defineType } from 'sanity';
 
+import {
+  googleAnalytics,
+  meta,
+  openGraph,
+  siteSettings,
+} from '../objects/index';
 
-const SiteMeta: Schema.Document = {
+const SiteMeta = defineType({
   type: "document",
   name: "siteMeta",
   title: "Site Configuration",
@@ -9,7 +15,7 @@ const SiteMeta: Schema.Document = {
     {
       name: "google",
       title: "Google Analytics",
-      hidden: ({ document }) => !document.isGoogleAnalyticsEnabled,
+      hidden: ({document}) => !document?.isGoogleAnalyticsEnabled,
     },
   ],
   groups: [
@@ -25,12 +31,12 @@ const SiteMeta: Schema.Document = {
     {
       name: "manifest",
       title: "Web App Settings",
-      hidden: ({ document })=> !document.isPwa,
+      hidden: ({document})=> !document?.isPwa,
     },
     {
       name: "google",
       title: "Google Config",
-      hidden: ({ document }) => !document.isGoogleAnalyticsEnabled,
+      hidden: ({document}) => !document?.isGoogleAnalyticsEnabled,
     },
   ],
   fields: [
@@ -45,6 +51,6 @@ const SiteMeta: Schema.Document = {
       group: "manifest",
     },
   ],
-};
+});
 
 export default SiteMeta;
