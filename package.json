@@ -56,11 +56,11 @@
   "devDependencies": {
     "@sanity/pkg-utils": "^2.4.9",
     "@sanity/plugin-kit": "^3.1.10",
-    "@types/node": "^18.7.16",
+    "@types/node": "^18.17.17",
     "@types/react": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.7.0",
-    "commitlint": "^17.1.2",
+    "commitlint": "^17.7.1",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-sanity": "^6.0.0",
