@@ -1,10 +1,10 @@
-import CONSTANTS from "./constants";
-const { LOCALES, DISPLAYMODES, OGTYPES } = CONSTANTS
+import CONSTANTS from './constants'
+const {LOCALES, DISPLAYMODES, OGTYPES} = CONSTANTS
 
 export default {
   LOCALES,
   DISPLAYMODES,
-  OGTYPES
-};
+  OGTYPES,
+}
 
-export { LOCALES, DISPLAYMODES, OGTYPES };
+export {LOCALES, DISPLAYMODES, OGTYPES}

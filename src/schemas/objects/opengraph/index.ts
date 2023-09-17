@@ -1,12 +1,13 @@
-import basic from "./basic";
-import optional from "./optional";
+import {defineType} from 'sanity'
 
-export default<Schema.Object> {
-  name: "openGraph",
-  type: "object",
-  title: "Social Share Details",
-  fields: [
-    ...basic.fields,
-    ...optional.fields
-  ]
-}
+import basic from './basic'
+import optional from './optional'
+
+const openGraph = defineType({
+  name: 'openGraph',
+  type: 'object',
+  title: 'Social Share Details',
+  fields: [...basic.fields, ...optional.fields],
+})
+
+export default openGraph

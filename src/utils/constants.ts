@@ -1,32 +1,21 @@
-const LOCALES: Locales = [
+const LOCALES = [
   {
-    title: "American English",
-    value: "en-US",
+    title: 'American English',
+    value: 'en-US',
   },
   {
-    title: "British English",
-    value: "en-GB",
+    title: 'British English',
+    value: 'en-GB',
   },
   {
-    title: "French",
-    value: "fr-FR",
+    title: 'French',
+    value: 'fr-FR',
   },
-];
-const DISPLAYMODES: DisplayModes =  [
-  'browser',
-  'fullscreen',
-  'minimal-ui',
-  'standalone',
 ]
-const OGTYPES = [
-  "website",
-  "article",
-  "blog",
-  "video",
-  "image",
-]
+const DISPLAYMODES = ['browser', 'fullscreen', 'minimal-ui', 'standalone']
+const OGTYPES = ['website', 'article', 'blog', 'video', 'image']
 
-const CONSTANTS = { LOCALES, DISPLAYMODES, OGTYPES };
-export default CONSTANTS;
+const CONSTANTS = {LOCALES, DISPLAYMODES, OGTYPES}
+export default CONSTANTS
 
-export { LOCALES, DISPLAYMODES, CONSTANTS, OGTYPES };
+export {CONSTANTS, DISPLAYMODES, LOCALES, OGTYPES}

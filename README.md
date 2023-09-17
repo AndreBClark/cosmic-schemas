@@ -1,7 +1,9 @@
 <!-- # cosmic-schemas
 Sanity schematypes for managing head/meta tags on your website
 -->
+
 <a name="readme-top"></a>
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -41,8 +43,6 @@ Sanity schematypes for managing head/meta tags on your website
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -71,9 +71,10 @@ Sanity schematypes for managing head/meta tags on your website
 
 ## Packages
 
-* [Sanity Meta](https://github.com/andrebclark/cosmic-schemas) Sanity schemas for html meta and og tags
+- [Sanity Meta](https://github.com/andrebclark/cosmic-schemas) Sanity schemas for html meta and og tags
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
@@ -81,7 +82,6 @@ Sanity schematypes for managing head/meta tags on your website
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `andrebclark`, `cosmic-schemas`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!--
 ### Built With
@@ -98,8 +98,8 @@ Sanity schematypes for managing head/meta tags on your website
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -131,9 +131,8 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -141,8 +140,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 <!-- ## Roadmap
@@ -156,9 +153,8 @@ See the [open issues](https://github.com/andrebclark/cosmic-schemas/issues) for 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -174,16 +170,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 <!-- ## Contact
@@ -206,9 +199,9 @@ Project Link: [https://github.com/andrebclark/cosmic-schemas](https://github.com
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 -->
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/andrebclark/cosmic-schemas.svg?style=for-the-badge
 [contributors-url]: https://github.com/andrebclark/cosmic-schemas/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/andrebclark/cosmic-schemas.svg?style=for-the-badge

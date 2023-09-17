@@ -1,7 +1,7 @@
-import siteMeta from "./siteMeta";
+import siteMeta from './siteMeta'
 
-const Documents: Schema.Types<Schema.Document>  = {
-  siteMeta
+const Documents = {
+  siteMeta,
 }
-export { siteMeta };
-export default Documents;
+export {siteMeta}
+export default Documents

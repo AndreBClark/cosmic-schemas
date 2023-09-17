@@ -1,6 +1,8 @@
-import { DISPLAYMODES } from '../../../schemas/sanity-meta/src/utils/constants';
+import {defineType} from 'sanity'
 
-const WebManifest: Schema.Object = {
+import {DISPLAYMODES} from '../../utils'
+
+const WebManifest = defineType({
   name: 'manifest',
   type: 'object',
   title: 'Progressive Web App Configuration',
@@ -9,20 +11,18 @@ const WebManifest: Schema.Object = {
       type: 'string',
       name: 'short_name',
       title: 'Short Name',
-
     },
     {
       type: 'string',
       name: 'start_url',
       title: 'App Start URL',
-      initialValue: "/"
+      initialValue: '/',
     },
 
     {
       type: 'color',
       name: 'theme_color',
       title: 'Theme Color',
-
     },
     {type: 'color', name: 'background_color', title: 'Background Color'},
 
@@ -35,9 +35,10 @@ const WebManifest: Schema.Object = {
       },
     },
   ],
-  initialValues: {
+  initialValue: {
     display: DISPLAYMODES[0],
+    // eslint-disable-next-line camelcase
     start_url: '/',
   },
-}
-export default WebManifest;
+})
+export default WebManifest

@@ -1,4 +1,4 @@
 packages:
-  - "schemas/sanity-meta"
-  - "schemas"
-  - "schemas/**"
+  - 'schemas/sanity-meta'
+  - 'schemas'
+  - 'schemas/**'

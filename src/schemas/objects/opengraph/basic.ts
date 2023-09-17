@@ -1,9 +1,11 @@
-import { OGTYPES } from '../../../../schemas/sanity-meta/src/utils/index';
+import {defineType} from 'sanity'
 
-export default<Schema.Object> {
-  name: "basic",
-  type:"object",
-  title: "Basic Social Share Info",
+import {OGTYPES} from '../../../utils'
+
+export default defineType({
+  name: 'basic',
+  type: 'object',
+  title: 'Basic Social Share Info',
   fields: [
     {
       type: 'string',
@@ -11,8 +13,7 @@ export default<Schema.Object> {
       name: 'ogTitle',
       description:
         'Set the title Open Graph should use. In most situations, this should be different from the value of the title prop',
-      validation: (Rule) => Rule.required(),
-      group: ["meta", "og"],
+      group: ['meta', 'og'],
     },
     {
       type: 'url',
@@ -32,12 +33,12 @@ export default<Schema.Object> {
       group: ['og'],
     },
     {
-      type: "string",
-      name: "ogType",
-      title: "og:type",
-      options: { list: OGTYPES },
+      type: 'string',
+      name: 'ogType',
+      title: 'og:type',
+      options: {list: OGTYPES},
       initialValue: OGTYPES[0],
-      group: ["og"]
-    }
-  ]
-}
+      group: ['og'],
+    },
+  ],
+})
