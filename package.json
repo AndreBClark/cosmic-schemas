@@ -1,7 +1,7 @@
 {
   "name": "sanity-plugin-sitemeta",
-  "version": "1.1.1",
-  "description": "Collection of Sanity schematypes for Sanity Studio v3",
+  "version": "2.0.0",
+  "description": "Collection of Sanity schematypes for your site website's meta data and SEO attributes",
   "keywords": [
     "sanity",
     "schema",
