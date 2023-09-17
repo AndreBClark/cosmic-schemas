@@ -1,27 +1,9 @@
 {
+  "extends": "./tsconfig.settings",
+  "include": ["./src", "./package.config.ts"],
   "compilerOptions": {
-    "target": "ES2016",
-    "lib": ["esnext"],
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "moduleDetection": "force",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "declaration": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["node"]
-  },
-  "typeAcquisition": {
-    "enable": true,
-  },
-  // "files": ["./schemas/**/src/*.d.ts"],
-  "include": ["*.ts", "**/*.ts", "**/*.d.ts"],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "/**/node_modules"
-  ]
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "noEmit": true
+  }
 }
