@@ -135,9 +135,22 @@ This is an example of how to list things you need to use the software and how to
 
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Usage in `sanity.config.ts` (or .js)
+ *
+ * ```ts
+ * import {defineConfig} from 'sanity'
+ * import {siteMeta} from 'sanity-plugin-sitemeta'
+ *
+ * export default defineConfig({
+ *   // ...
+ *   plugins: [siteMeta()],
+ * })
+ * ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+now you can use the following types in your sanity schemas:
+- documents: `siteMeta`
+- objects: `openGraph`, `manifest`, `meta`, `siteSettings`, `locale`, `googleAnalytics`
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
