@@ -1,6 +1,6 @@
-import {defineType} from 'sanity'
+import { defineType } from 'sanity';
 
-import {DISPLAYMODES} from '../../utils'
+import { DISPLAYMODES } from '../../utils';
 
 const WebManifest = defineType({
   name: 'manifest',
@@ -20,11 +20,11 @@ const WebManifest = defineType({
     },
 
     {
-      type: 'color',
+      type: 'string',
       name: 'theme_color',
       title: 'Theme Color',
     },
-    {type: 'color', name: 'background_color', title: 'Background Color'},
+    {type: 'string', name: 'background_color', title: 'Background Color'},
 
     {
       name: 'display',

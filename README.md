@@ -136,21 +136,26 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 Usage in `sanity.config.ts` (or .js)
- *
- * ```ts
- * import {defineConfig} from 'sanity'
- * import {siteMeta} from 'sanity-plugin-sitemeta'
- *
- * export default defineConfig({
- *   // ...
- *   plugins: [siteMeta()],
- * })
- * ```
+
+-
+- ```ts
+
+  ```
+- import {defineConfig} from 'sanity'
+- import {siteMeta} from 'sanity-plugin-sitemeta'
+-
+- export default defineConfig({
+- // ...
+- plugins: [siteMeta()],
+- })
+- ```
+
+  ```
 
 now you can use the following types in your sanity schemas:
+
 - documents: `siteMeta`
 - objects: `openGraph`, `manifest`, `meta`, `siteSettings`, `locale`, `googleAnalytics`
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
