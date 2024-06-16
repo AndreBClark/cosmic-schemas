@@ -121,12 +121,12 @@ Install the package by using your prefered package manager
 
 - **npm**
   ```shell
-  npm install sanity-plugin-schema
+  npm install sanity-plugin-sitemeta
   ```
 
 - **yarn**
   ```shell
-  yarn add sanity-plugin-schema
+  yarn add sanity-plugin-sitemeta
   ```
 
 <!-- 
