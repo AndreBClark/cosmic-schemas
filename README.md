@@ -69,19 +69,20 @@ Sanity schematypes for managing head/meta tags on your website
   </ol>
 </details>
 
-## Packages
+<!-- ##Packages -->
 
-- [Sanity Meta](https://github.com/andrebclark/cosmic-schemas) Sanity schemas for html meta and og tags
+
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+[Sanity Meta](https://github.com/andrebclark/cosmic-schemas) Sanity schemas for html meta and og tags
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `andrebclark`, `cosmic-schemas`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!--
 ### Built With
@@ -137,20 +138,22 @@ This is an example of how to list things you need to use the software and how to
 
 Usage in `sanity.config.ts` (or .js)
 
--
-- ```ts
+```ts
 
-  ```
-- import {defineConfig} from 'sanity'
-- import {siteMeta} from 'sanity-plugin-sitemeta'
--
-- export default defineConfig({
-- // ...
-- plugins: [siteMeta()],
-- })
-- ```
+import {defineConfig} from 'sanity'
+import {siteMeta} from 'sanity-plugin-sitemeta'
 
-  ```
+export default defineConfig({
+  
+  // ...
+  plugins: [
+      //...
+      siteMeta(),
+      //...
+  ],
+})
+
+```
 
 now you can use the following types in your sanity schemas:
 
