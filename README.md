@@ -114,8 +114,22 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ``` -->
 
-<!-- ### Installation
+## Installation
 
+Install the package by using your prefered package manager
+
+
+- **npm**
+  ```shell
+  npm install sanity-plugin-schema
+  ```
+
+- **yarn**
+  ```shell
+  yarn add sanity-plugin-schema
+  ```
+
+<!-- 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
